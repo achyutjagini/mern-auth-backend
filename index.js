@@ -38,7 +38,7 @@ app.get('/hello', (req, res) => {
 
 app.use('/api', authRoutes);
 
-const port = 8000
+const PORT = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`server started on ${port}`)
 })
